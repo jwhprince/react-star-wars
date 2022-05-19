@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getApiResource } from '../../utils/network';
 import { API_PEOPLE } from '../../constants/api';
 import { getPeopleId, getPeopleImage } from '../../services/getPeopleData';
+import PeopleList from '../../components/PeoplePage/PeopleList'
 import styles from './People.module.css';
 
 const PeoplePage = () => {
@@ -31,17 +32,7 @@ const PeoplePage = () => {
 
     return (
         <>
-            {people && (
-
-                <ul>
-                    {people.map(({ id, name, img }) =>
-                        <li key={id}>
-                            <img src={img} alt={name} />
-                            <p>{name}</p>
-                        </li>
-                    )}
-                </ul>
-            )}
+            {people &&  <PeopleList people={people} />}
         </>
     )
 }
