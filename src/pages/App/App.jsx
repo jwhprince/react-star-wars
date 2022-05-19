@@ -1,4 +1,4 @@
-import PeoplePage from '../PeoplePage';
+import PeoplePage from '@pages/PeoplePage';
 import styles from './App.module.css';
 
 

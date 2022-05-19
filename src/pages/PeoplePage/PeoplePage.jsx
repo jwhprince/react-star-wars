@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import { withErrorApi } from '../../hoc-helpers/withErrorApi'
-import { getApiResource } from '../../utils/network';
-import { API_PEOPLE } from '../../constants/api';
-import { getPeopleId, getPeopleImage } from '../../services/getPeopleData';
-import PeopleList from '../../components/PeoplePage/PeopleList'
-import styles from './People.module.css';
+import { withErrorApi } from '@hoc-helpers/withErrorApi'
+import { getApiResource } from '@utils/network';
+import { API_PEOPLE } from '@constants/api';
+import { getPeopleId, getPeopleImage } from '@services/getPeopleData';
+import PeopleList from '@components/PeoplePage/PeopleList'
+
 
 const PeoplePage = ({ setErrorApi }) => {
     const [people, setPeople] = useState(null);
