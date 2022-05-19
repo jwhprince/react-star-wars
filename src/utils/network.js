@@ -17,12 +17,6 @@ export const getApiResource = async (url) => {
     }
 
     
-
-    // fetch(url)
-    // .then(res => res.json())
-    // .then(body => console.log(body))
-    // .catch(error => console.log(error))
-    
 }
 
 // getApiResource(SWAPI_ROOT + SWAPI_PEOPLE)
