@@ -1,8 +1,11 @@
 import { GUIDE_IMG_EXTENSION, URL_IMG_PERSON, HTTPS, HTTP, SWAPI_ROOT, SWAPI_PEOPLE, SWAPI_PARAM_PAGE } from '../constants/api';
 
+
+
 export const getPeoplePageId = url => {
     const pos = url.lastIndexOf(SWAPI_PARAM_PAGE);
-    const id = url.slice(pos+SWAPI_PARAM_PAGE.length,)
+    const id = url.slice(pos+SWAPI_PARAM_PAGE.length)
+    
     return Number(id);
 }
 
