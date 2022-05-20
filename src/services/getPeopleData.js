@@ -22,7 +22,8 @@ const getId = (url, category) => {
    .replace(protocol+SWAPI_ROOT+category, '')
    .replace(/\//g, '')
    return id;
-}
+  }
+  
 
 export const getPeopleId = url => getId(url, SWAPI_PEOPLE);
 

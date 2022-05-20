@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { withErrorApi } from '@hoc-helpers/withErrorApi'
+import { withErrorApi } from '@hoc-helpers/withErrorApi';
 import PeopleList from '@components/PeoplePage/PeopleList'
 import PeopleNavigation from '@components/PeoplePage/PeopleNavigation';
 import { getApiResource } from '@utils/network';
@@ -31,11 +31,12 @@ const PeoplePage = ({ setErrorApi }) => {
                 const img = getPeopleImage(id);
 
                 return {
-                    name,
-                    url,
-                    img
+                   id,
+                   name,
+                   img,
                 }
             })
+           
             setPeople(peopleList);
             setPrevPage(res.previous);
             setNextPage(res.next);
@@ -50,7 +51,7 @@ const PeoplePage = ({ setErrorApi }) => {
       
 
     useEffect(() => {
-        getResource(API_PEOPLE+ queryPage);
+        getResource(API_PEOPLE+queryPage);
     }, []);
 
     return (
