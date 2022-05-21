@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { withErrorApi } from '@hoc-helpers/withErrorApi';
-import PeopleList from '@components/PeoplePage/PeopleList'
+import PeopleList from '@components/PeoplePage/PeopleList';
 import PeopleNavigation from '@components/PeoplePage/PeopleNavigation';
+
 import { getApiResource } from '@utils/network';
 import { API_PEOPLE } from '@constants/api';
 import { getPeopleId, getPeopleImage, getPeoplePageId } from '@services/getPeopleData';
