@@ -5,6 +5,16 @@
 
 }
 
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: var(--spacing-large);
+    object-fit: cover;
+    object-position: centre center;
+
+
+}
+
 .list__container { 
     display: flex;
     flex-wrap: wrap;
