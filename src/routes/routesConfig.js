@@ -3,6 +3,8 @@ import PersonPage from '@pages/PersonPage';
 import HomePage from '@pages/HomePage';
 import NotFoundPage from '@pages/NotFoundPage';
 import FavoritesPage from '@pages/FavoritesPage';
+import SearchPage from '@pages/SearchPage';
+
 
 
 
@@ -18,6 +20,10 @@ const routesConfig = [
     {
         path:'/favorites',
         element: <FavoritesPage  />
+    },
+    {
+        path:'/search',
+        element: <SearchPage  />
     },
     {
         path:'/people/:id',

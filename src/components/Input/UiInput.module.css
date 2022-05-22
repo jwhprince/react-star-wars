@@ -1,0 +1,41 @@
+
+
+.wrapper__input {
+   position: relative;
+   display: inline-flex;
+}
+
+.input {
+    min-width: 300px;
+    padding: 10px 15px;
+    padding-right: calc(var(--clear-width) + 15px);
+    border: 3px solid var(--color-lightgray);
+    border-radius: 3px;
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family);
+    outline: none;
+}
+
+.input:focus {
+    border: 3px solid var(--color-blue);
+}
+
+.clear {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: var(--clear-width);
+    height: 35px;
+    padding: 10px;
+    object-fit: contain;
+    object-position: center center;
+    transition: 0.5s;
+    opacity: 0.6;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.clear__disapled {
+    opacity: 0.2;
+}

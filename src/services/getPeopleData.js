@@ -1,10 +1,10 @@
-import { GUIDE_IMG_EXTENSION, URL_IMG_PERSON, HTTPS, HTTP, SWAPI_ROOT, SWAPI_PEOPLE, SWAPI_PARAM_PAGE } from '../constants/api';
+import { GUIDE_IMG_EXTENSION, URL_IMG_PERSON, HTTPS, HTTP, SWAPI_ROOTT, SWAPI_PEOPLEE, SWAPI_PARAM_PAGEE } from '../constants/api';
 
 
 
 export const getPeoplePageId = url => {
-    const pos = url.lastIndexOf(SWAPI_PARAM_PAGE);
-    const id = url.slice(pos+SWAPI_PARAM_PAGE.length)
+    const pos = url.lastIndexOf(SWAPI_PARAM_PAGEE);
+    const id = url.slice(pos+SWAPI_PARAM_PAGEE.length)
     
     return Number(id);
 }
@@ -19,12 +19,12 @@ const checkProtocol = url => {
 const getId = (url, category) => {
     const protocol = checkProtocol(url);
    const id = url
-   .replace(protocol+SWAPI_ROOT+category, '')
+   .replace(protocol+SWAPI_ROOTT+category, '')
    .replace(/\//g, '')
    return id;
   }
   
 
-export const getPeopleId = url => getId(url, SWAPI_PEOPLE);
+export const getPeopleId = url => getId(url, SWAPI_PEOPLEE);
 
 export const getPeopleImage = id => `${URL_IMG_PERSON}/${id+GUIDE_IMG_EXTENSION}`;

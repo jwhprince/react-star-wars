@@ -4,6 +4,8 @@
   --color-white: #fff;
   --color-black: #000;
   --color-dark-grey:#10100e;
+  --color-lightgray: #dfe2df;
+  --color-gray:      #9c9c9c;
   --color-yellow: #ffff00;
   --color-blue: #6a83fb;
   --color-violet: #ae72c2;
@@ -26,6 +28,8 @@
 
   --border-radius-small: 3px;
   --border-radius-medium: 5px;
+
+  --clear-width: 35px;
 
   --text-shadow-yellow: 
   0 0 2px var(--color-white),
@@ -74,6 +78,11 @@ body {
   background-attachment: fixed;
 
 }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 img {
   display: block;
 }

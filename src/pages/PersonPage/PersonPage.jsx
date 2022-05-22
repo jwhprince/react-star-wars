@@ -6,10 +6,10 @@ import { withErrorApi } from '@hoc-helpers/withErrorApi';
 import  PersonInfo  from '@components/PersonPage/PersonInfo';
 import  PersonPhoto  from '@components/PersonPage/PersonPhoto';
 import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
-import UiLoading from '@ui/UiLoading';
+import UiLoading from '@components/Loading';
 import { getApiResource } from '@utils/network';
 import { getPeopleImage } from '@services/getPeopleData';
-import { API_PERSON } from '@constants/api'
+import { API_PERSONN } from '@constants/api'
 import { useParams } from 'react-router-dom';
 import styles from './PersonPage.module.css';
 
@@ -30,7 +30,7 @@ const PersonPage = ({setErrorApi}) => {
     const { id } = useParams();
     useEffect(() => {
         (async () => {
-            const res = await getApiResource(`${API_PERSON}/${id}`);
+            const res = await getApiResource(`${API_PERSONN}/${id}`);
 
             setPersonFavorite(!!storeData[id]);
 

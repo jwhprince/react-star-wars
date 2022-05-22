@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../index.css';
+import '@styles/index.css';
 import styles from './UiButton.module.css';
 import cn from 'classnames'
 

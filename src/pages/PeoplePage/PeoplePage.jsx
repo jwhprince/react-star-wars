@@ -5,7 +5,7 @@ import PeopleList from '@components/PeoplePage/PeopleList';
 import PeopleNavigation from '@components/PeoplePage/PeopleNavigation';
 
 import { getApiResource } from '@utils/network';
-import { API_PEOPLE } from '@constants/api';
+import { API_PEOPLEE } from '@constants/api';
 import { getPeopleId, getPeopleImage, getPeoplePageId } from '@services/getPeopleData';
 import { useQueryParams } from '@hooks/useQueryParams';
 import styles from './PeoplePage.module.css';
@@ -52,7 +52,7 @@ const PeoplePage = ({ setErrorApi }) => {
       
 
     useEffect(() => {
-        getResource(API_PEOPLE+queryPage);
+        getResource(API_PEOPLEE+queryPage);
     }, []);
 
     return (
