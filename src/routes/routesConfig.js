@@ -4,6 +4,7 @@ import HomePage from '@pages/HomePage';
 import NotFoundPage from '@pages/NotFoundPage';
 import FavoritesPage from '@pages/FavoritesPage';
 import SearchPage from '@pages/SearchPage';
+import ErrorMessage from '@components/ErrorMessage';
 
 
 
@@ -28,6 +29,10 @@ const routesConfig = [
     {
         path:'/people/:id',
         element: <PersonPage />
+    },
+    {
+        path:'/fail',
+        element: <ErrorMessage />
     },
     {
         path:'/not-found',
