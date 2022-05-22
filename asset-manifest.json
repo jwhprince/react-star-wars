@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-star-wars/static/css/main.5a3999db.css",
+    "main.js": "/react-star-wars/static/js/main.42dde885.js",
+    "static/css/895.5e5588b6.chunk.css": "/react-star-wars/static/css/895.5e5588b6.chunk.css",
+    "static/js/895.82d99520.chunk.js": "/react-star-wars/static/js/895.82d99520.chunk.js",
+    "static/media/stback.jpg": "/react-star-wars/static/media/stback.21b185cd1630f598afe6.jpg",
+    "static/media/darkback.jpg": "/react-star-wars/static/media/darkback.a681f118e7aacb1ade7d.jpg",
+    "static/media/404.png": "/react-star-wars/static/media/404.fc5d996fcefc3bf2e80f.png",
+    "static/media/falcon.jpg": "/react-star-wars/static/media/falcon.c1d0a8d1869b3fbdb9ab.jpg",
+    "static/media/han-solo.mp4": "/react-star-wars/static/media/han-solo.db435084c403f6b37d4d.mp4",
+    "static/media/dark-side.jpg": "/react-star-wars/static/media/dark-side.e0f8cab78e4bdd7db45d.jpg",
+    "static/media/light-side.jpg": "/react-star-wars/static/media/light-side.eebc52171cd4ac0278ca.jpg",
+    "static/media/lightsaber.svg": "/react-star-wars/static/media/lightsaber.eb7d4cd665426117002814db79fceef4.svg",
+    "static/media/space-station.svg": "/react-star-wars/static/media/space-station.7a027c6ec10ba7b5d8c880df5f4e65ea.svg",
+    "static/media/droid.svg": "/react-star-wars/static/media/droid.de165dd887badb2bdbe9d97b8e527c6f.svg",
+    "static/media/loader-blue.svg": "/react-star-wars/static/media/loader-blue.126158a07239ebc49cdb1a1457e81f25.svg",
+    "static/media/loader-dark.svg": "/react-star-wars/static/media/loader-dark.3935bf1a5d8e3f3ad8b1af426997cd48.svg",
+    "static/media/loader-light.svg": "/react-star-wars/static/media/loader-light.8d76641b17f74fe1a145d9bb2deb0c9f.svg",
+    "static/media/favorite-fill.svg": "/react-star-wars/static/media/favorite-fill.bc162d09afe4e25ae55eee850608cc97.svg",
+    "static/media/favorite.svg": "/react-star-wars/static/media/favorite.827692896de05d5e41bb46e23308c286.svg",
+    "static/media/cancel.svg": "/react-star-wars/static/media/cancel.1d37b349388167de6bd090b5731bf27e.svg",
+    "static/media/bookmark.svg": "/react-star-wars/static/media/bookmark.31e3181119b11037b93dc7700e81274f.svg",
+    "index.html": "/react-star-wars/index.html",
+    "static/media/back.svg": "/react-star-wars/static/media/back.e0a0d9cee1f986abdb295a89da04412f.svg",
+    "main.5a3999db.css.map": "/react-star-wars/static/css/main.5a3999db.css.map",
+    "main.42dde885.js.map": "/react-star-wars/static/js/main.42dde885.js.map",
+    "895.5e5588b6.chunk.css.map": "/react-star-wars/static/css/895.5e5588b6.chunk.css.map",
+    "895.82d99520.chunk.js.map": "/react-star-wars/static/js/895.82d99520.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a3999db.css",
+    "static/js/main.42dde885.js"
+  ]
+}
