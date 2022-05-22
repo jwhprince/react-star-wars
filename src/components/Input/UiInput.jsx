@@ -10,9 +10,9 @@ const UiInput = ({
     placeholder,
     classes,
 
-}) =>  (
+}) => (
     <div className={cn(styles.wrapper__input, classes)}>
-        <input 
+        <input
             type="text"
             value={value}
             onChange={(e) => handleInputChange(e.target.value)}
@@ -21,13 +21,13 @@ const UiInput = ({
 
         />
         <img
-           onClick={() => value && handleInputChange('')}
-           src={icon}
-           className={cn(styles.clear, !value && styles.clear__disapled)}
-           alt="clear"
+            onClick={() => value && handleInputChange('')}
+            src={icon}
+            className={cn(styles.clear, !value && styles.clear__disapled)}
+            alt="clear"
         />
     </div>
-  )
+)
 
 
 UiInput.propTypes = {

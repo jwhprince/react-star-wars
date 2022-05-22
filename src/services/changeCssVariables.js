@@ -9,8 +9,8 @@ export const changeCssVariables = theme => {
     cssVariables.forEach(element => {
         root.style.setProperty(
             `--theme-default-${element}`,
-              `var(--theme-${theme}-${element})`
-              );
+            `var(--theme-${theme}-${element})`
+        );
 
     })
 }

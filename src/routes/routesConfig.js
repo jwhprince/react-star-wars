@@ -11,35 +11,35 @@ import ErrorMessage from '@components/ErrorMessage';
 
 const routesConfig = [
     {
-        path:'/',
+        path: '/',
         element: <HomePage />
     },
     {
-        path:'/people',
+        path: '/people',
         element: <PeoplePage />
     },
     {
-        path:'/favorites',
-        element: <FavoritesPage  />
+        path: '/favorites',
+        element: <FavoritesPage />
     },
     {
-        path:'/search',
-        element: <SearchPage  />
+        path: '/search',
+        element: <SearchPage />
     },
     {
-        path:'/people/:id',
+        path: '/people/:id',
         element: <PersonPage />
     },
     {
-        path:'/fail',
+        path: '/fail',
         element: <ErrorMessage />
     },
     {
-        path:'/not-found',
+        path: '/not-found',
         element: <NotFoundPage />
     },
     {
-        path:'*',
+        path: '*',
         element: <NotFoundPage />
     }
 ];

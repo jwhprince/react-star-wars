@@ -1,6 +1,6 @@
 import { getLocalStorage } from '@utils/localStorage';
 import { omit } from 'lodash';
-import { ADD_PERSON_TO_FAVORITE, REMOVE_PERSON_FROM_FAVORITE} from '@store/constants/actionTypes';
+import { ADD_PERSON_TO_FAVORITE, REMOVE_PERSON_FROM_FAVORITE } from '@store/constants/actionTypes';
 
 const initialState = getLocalStorage('store');
 
@@ -12,12 +12,12 @@ const favoriteReducer = (state = initialState, action) => {
                 ...state,
                 ...action.payload
             }
-            
-            
+
+
         case REMOVE_PERSON_FROM_FAVORITE:
             return omit(state, [action.payload])
-            
-    
+
+
         default:
             return state;
     }

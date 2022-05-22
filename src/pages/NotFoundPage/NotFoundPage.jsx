@@ -3,14 +3,14 @@ import img from '@static/404.png'
 import styles from './NotFoundPage.module.css';
 
 const NotFoundPage = () => {
-    let location = useLocation();
+  let location = useLocation();
 
-    
+
 
   return (
     <>
-       <img className={styles.img} src={img} alt="404" />
-       <p className={styles.text}>No match for <u>{location.pathname}</u></p>
+      <img className={styles.img} src={img} alt="404" />
+      <p className={styles.text}>No match for <u>{location.pathname}</u></p>
     </>
   )
 }

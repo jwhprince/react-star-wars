@@ -16,15 +16,15 @@ const PeoplePage = ({ setErrorApi }) => {
     const [prevPage, setPrevPage] = useState(null);
     const [nextPage, setNextPage] = useState(null);
     const [counterPage, setCounterPage] = useState(1);
-    
+
     const query = useQueryParams();
     const queryPage = query.get('page');
 
-    
+
 
     const getResource = async (url) => {
         const res = await getApiResource(url);
-        
+
 
         if (res) {
             const peopleList = res.results.map(({ name, url }) => {
@@ -32,12 +32,12 @@ const PeoplePage = ({ setErrorApi }) => {
                 const img = getPeopleImage(id);
 
                 return {
-                   id,
-                   name,
-                   img,
+                    id,
+                    name,
+                    img,
                 }
             })
-           
+
             setPeople(peopleList);
             setPrevPage(res.previous);
             setNextPage(res.next);
@@ -49,21 +49,21 @@ const PeoplePage = ({ setErrorApi }) => {
         }
 
     }
-      
+
 
     useEffect(() => {
-        getResource(API_PEOPLEE+queryPage);
+        getResource(API_PEOPLEE + queryPage);
     }, []);
 
     return (
         <>
 
-            
-            <PeopleNavigation 
-              getResource={getResource}
-              prevPage={prevPage}
-              nextPage={nextPage}
-              counterPage={counterPage}
+
+            <PeopleNavigation
+                getResource={getResource}
+                prevPage={prevPage}
+                nextPage={nextPage}
+                counterPage={counterPage}
             />
             {people && <PeopleList people={people} />}
 

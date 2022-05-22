@@ -1,22 +1,22 @@
-import  { useNavigate }  from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import iconBack from './img/back.svg';
 import styles from './PersonLinkBack.module.css';
 
- const PersonLinkBack = () => {
-     const navigate = useNavigate();
+const PersonLinkBack = () => {
+  const navigate = useNavigate();
 
-     const handleGoBack = e => {
-         e.preventDefault();
-         navigate(-1);
-     }
+  const handleGoBack = e => {
+    e.preventDefault();
+    navigate(-1);
+  }
 
   return (
-    <a 
-      href="#" 
+    <a
+      href="#"
       onClick={handleGoBack}
       className={styles.link}
     >
-      <img className={styles.link__img}src={iconBack} alt="goback" />
+      <img className={styles.link__img} src={iconBack} alt="goback" />
       <span>Go back</span>
     </a>
   )
